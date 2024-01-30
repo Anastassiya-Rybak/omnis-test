@@ -1,6 +1,6 @@
 export const useUsersStore = defineStore ("users", {
     state: () => ({
-        users: []
+        users: [],
     }),
 
     actions: {
@@ -9,11 +9,11 @@ export const useUsersStore = defineStore ("users", {
         },
 
         saveState () {
-            localStorage.setItem('usersState', JSON.stringify(this.$state))
+            localStorage.setItem('usersDataState', JSON.stringify(this.$state))
         },
 
         async restoreState() {
-            const savedState = localStorage.getItem('usersState');
+            const savedState = localStorage.getItem('usersDataState');
             this.users = await $fetch('/api/bd');
             if (savedState) {
               this.$patch(JSON.parse(savedState))

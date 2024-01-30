@@ -15,7 +15,7 @@
                     <li>{{ user.server_name }}</li>
                     <li>{{ user.server_type }}</li>
                     <li>
-                        <TheButton text="Редактировать" @click.prevent="$emit('edit')" />
+                        <TheButton text="Редактировать" @click.prevent="$emit('edit', idx)" />
                     </li>
                 </ul>
             </li>
@@ -36,11 +36,20 @@
 
 <style lang="scss" scoped>
     .users-list {
-        width: 45%;
+        width: 50%;
+
+        @include media(760px){
+            width: 100%;
+            margin-top: 3dvh;
+        }
 
         &__title {
             letter-spacing: 0.1em;
             margin-bottom: 2vh;
+            @include media(760px){
+                text-align: center;
+                font-size: 5vw;
+            }
         }
 
         &__content {
@@ -76,11 +85,15 @@
                 background-color: rgba(235, 235, 235, 0.719);
             }
 
-            li:last-child {
-                display: flex;
-                justify-content: end;
-                padding-right: 0.7em;
+            li {
+                &:last-child {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-right: 0.7em;
+                }                
             }
+
+
         }
     }
 </style>

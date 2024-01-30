@@ -36,6 +36,10 @@
         letter-spacing: 0.1em;
         cursor: pointer;
 
+        @include hover(){
+            transform: scale(1.07);
+        }
+
         &:active {
             box-shadow: 0 0 0.01em #4e4e4e67;
         }
