@@ -1,3 +1,5 @@
+import JSON from '~/server/bd.json'
+
 export const useServersStore = defineStore ("servers", {
     state: () => ({
         servers: []
@@ -27,7 +29,7 @@ export const useServersStore = defineStore ("servers", {
             if (savedState) {
               this.$patch(JSON.parse(savedState))
             } else {
-                const users = await $fetch('/api/bd');
+                const users = JSON.users;
                 this.updateServers(users);
             }
         },

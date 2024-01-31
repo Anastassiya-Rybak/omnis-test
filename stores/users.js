@@ -1,3 +1,4 @@
+import JSON from '~/server/bd.json'
 export const useUsersStore = defineStore ("users", {
     state: () => ({
         users: [],
@@ -14,7 +15,7 @@ export const useUsersStore = defineStore ("users", {
 
         async restoreState() {
             const savedState = localStorage.getItem('usersDataState');
-            this.users = await $fetch('/api/bd');
+            this.users = JSON.users;
             if (savedState) {
               this.$patch(JSON.parse(savedState))
             }

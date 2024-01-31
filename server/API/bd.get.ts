@@ -1,4 +1,4 @@
-export default defineEventHandler( async => {
+export default defineEventHandler( () => {
   return [
       {
         "customer_id": "user1",

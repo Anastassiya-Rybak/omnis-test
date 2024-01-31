@@ -1,3 +1,4 @@
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   alias: {
@@ -5,6 +6,9 @@ export default defineNuxtConfig({
   },
   css: ["@/assets/scss/global.scss"],
   vite: {
+    // build: {
+    //   target: SSR,
+    // },
     css: {
       preprocessorOptions: {
         scss: {
@@ -23,6 +27,7 @@ export default defineNuxtConfig({
   ],
   imports: {
     dirs: ['stores'],
-  }
+  },
+  ssr: true
 })
 
