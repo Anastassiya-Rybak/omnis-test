@@ -14,6 +14,7 @@ Github: [Ссылка на репозиторий](https://github.com/Anastassiy
 - Вывод списка моделей по предоставленным данным
 
 \```JavaScript
+
 [
   {
     "customer_id": "user1",
@@ -31,6 +32,7 @@ Github: [Ссылка на репозиторий](https://github.com/Anastassiy
     "server_type": "hosting"
   }
 ]
+
 \```
 
 - Возможность выбора модели для редактирования посредством кнопки "Редактировать".
