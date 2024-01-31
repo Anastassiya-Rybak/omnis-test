@@ -1,7 +1,7 @@
 # Тестовое задание для frontend разработчика.
 
 
-Деплой: [Ссылка на деплой приложение](https://nuxt.com/docs/getting-started/introduction](https://65b9a1fe5cf9e06a24255c36--stalwart-cheesecake-f4ecbf.netlify.app/)https://65b9a1fe5cf9e06a24255c36--stalwart-cheesecake-f4ecbf.netlify.app/).
+Деплой: [Ссылка на деплой приложение](https://65b9a1fe5cf9e06a24255c36--stalwart-cheesecake-f4ecbf.netlify.app/).
 
 
 Github: [Ссылка на репозиторий](https://github.com/Anastassiya-Rybak/omnis-test).
