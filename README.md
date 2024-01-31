@@ -13,7 +13,7 @@ Github: [Ссылка на репозиторий](https://github.com/Anastassiy
 
 - Вывод списка моделей по предоставленным данным
 
-\```json
+\```JavaScript
 [
   {
     "customer_id": "user1",
