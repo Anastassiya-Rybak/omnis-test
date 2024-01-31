@@ -1,75 +1,53 @@
-# Nuxt 3 Minimal Starter
+# Тестовое задание для frontend разработчика.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+Деплой: [Ссылка на деплой приложение](https://nuxt.com/docs/getting-started/introduction](https://65b9a1fe5cf9e06a24255c36--stalwart-cheesecake-f4ecbf.netlify.app/)https://65b9a1fe5cf9e06a24255c36--stalwart-cheesecake-f4ecbf.netlify.app/).
 
-Make sure to install the dependencies:
 
-```bash
-# npm
-npm install
+Github: [Ссылка на репозиторий](https://github.com/Anastassiya-Rybak/omnis-test).
 
-# pnpm
-pnpm install
+![Снимок экрана 2024-01-31 080403](https://github.com/Anastassiya-Rybak/omnis-test/assets/106969916/f2837081-b0a0-49e5-84a3-19634edf6a07)
 
-# yarn
-yarn install
 
-# bun
-bun install
-```
+## РЕАЛИЗОВАНО:
 
-## Development Server
+- Вывод списка моделей по предоставленным данным
 
-Start the development server on `http://localhost:3000`:
+\```json
+[
+  {
+    "customer_id": "user1",
+    "server_name": "server7",
+    "server_type": "vds"
+  },
+  {
+    "customer_id": "user5",
+    "server_name": "server2",
+    "server_type": "dedicated"
+  },
+  {
+    "customer_id": "user3",
+    "server_name": "server4",
+    "server_type": "hosting"
+  }
+]
+\```
 
-```bash
-# npm
-npm run dev
+- Возможность выбора модели для редактирования посредством кнопки "Редактировать".
+- Динамическое редактирование свойств "server_name" и "server_type" по input и select соответственно.
+- Сохранение изменений данных формы по кнопке "Сщхранить" либо по кнопке "ДА" в уточняющем модальном окне.
 
-# pnpm
-pnpm run dev
 
-# yarn
-yarn dev
+## СОБЛЮДЕНЫ ТРЕБОВАНИЯ К ПРИЛОЖЕНИЮ:
 
-# bun
-bun run dev
-```
+- [x] Для реализации использован *Nuxt3*;
+- [x] Выполнена базовая вёрстка страница из 2 главных компонентов в интерфейсе: *список слева* и *форма редактирования справа*.
+- [x] Продемонстрировано владение *ES6+* и *SCSS*.
+- [ ] Использован TypeScript.
+- [ ] Использован UI фреймворк.
 
-## Production
 
-Build the application for production:
 
-```bash
-# npm
-npm run build
+ 
 
-# pnpm
-pnpm run build
 
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
